@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Arduino Projekt | Postopek</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+    </head>
+    <body>
+        <div class="header">
+            <div id="header-text">Arduino Projekt <span>Alen Budimir</span></div>
+            <ul>
+                <li><a href="index.html">Domov</a></li>
+                <li><a href="cena.html">Cena</a></li>
+                <li><a class="selected" href="postopek.html">Postopek</a></li>
+                <li><a href="povzetek.html">Povzetek</a></li>
+                <li><a href="shema.html">Shema</a></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <h3>Program</h3>
+            <p>Aplikacija na telefonu pošilja "1" ali "0" v Arduino preko Bluetooth-a, ta podatek lahko vidimo v Serial Monitorju.</p>
+            <img src="img/app_hum.png"/>
+            <img src="img/app_temp.png"/>
+            <p>Program nato preverja, če ima Serial monitor nove podatke in pogleda ali je nov podatek 1 ali 0.</p>
+            <img src="img/koda1.png"/>
+            <p>Če je prejet podatek 1, nastavi spremenljivko "asd" na true, kar pa izpiše na LCD zaslon temperaturo.</p>
+            <img src="img/koda2.png"/>
+            <p>Če je prejet podatek 0, nastavi spremenljivko "asd" na false, kar pa izpiše na LCD zaslon vlažnost.</p>
+            <img src="img/koda3.png"/>
+            <p>Na koncu je še 2 sekundni premor.</p>
+            <img src="img/koda4.png"/>
+
+            <h4 id="knj">Knjižnice:</h5>
+            <ul id="list">
+                <li>DHT.h</li>
+                <li>Wire.h</li>
+                <li>LCD.h</li>
+                <li>LiquidCrystal_I2C.h</li>
+            </ul>
+        </div>
+
+    </body>
+</html>
